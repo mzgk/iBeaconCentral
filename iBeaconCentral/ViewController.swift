@@ -7,12 +7,24 @@
 //
 
 import UIKit
+import UserNotifications
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UNUserNotificationCenterDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        // 通知の許可
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+            if granted {
+                center.delegate = self
+            }
+        }
+
+        // Beaconのモニタリング開始
+        BeaconCentralManager.default.startMonitoring()
     }
 
     override func didReceiveMemoryWarning() {

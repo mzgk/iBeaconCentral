@@ -11,7 +11,7 @@ import CoreBluetooth
 import CoreLocation
 
 class MyBeacon {
-    static let proximityUUID: UUID = UUID(uuidString: "7A6CFE30-DF2B-4C04-8B6A-0180F73D64CD")!
+    static let proximityUUID: UUID = UUID(uuidString: "92CEC608-0C60-4DCD-98C4-8EF57C09EBDE")!
     static let major: CLBeaconMajorValue = 1
     static let minor: CLBeaconMinorValue = 1
     static let identifier: String = "com.mzgkworks"
@@ -23,5 +23,10 @@ class MyBeacon {
             minor: self.minor,
             identifier: self.identifier
         )
+    }
+
+    // 対象の比較用
+    static var myBeacon: (UUID, CLBeaconMajorValue, CLBeaconMinorValue) {
+        return (self.proximityUUID, self.major, self.minor)
     }
 }

@@ -13,6 +13,7 @@
 		324F1B99204E518400E449E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324F1B98204E518400E449E5 /* Assets.xcassets */; };
 		324F1B9C204E518400E449E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324F1B9A204E518400E449E5 /* LaunchScreen.storyboard */; };
 		324F1BA4204E522400E449E5 /* MyBeacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324F1BA3204E522400E449E5 /* MyBeacon.swift */; };
+		324F1BA6204E551B00E449E5 /* BeaconCentralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324F1BA5204E551B00E449E5 /* BeaconCentralManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		324F1B9B204E518400E449E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		324F1B9D204E518400E449E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		324F1BA3204E522400E449E5 /* MyBeacon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBeacon.swift; sourceTree = "<group>"; };
+		324F1BA5204E551B00E449E5 /* BeaconCentralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconCentralManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				324F1B9A204E518400E449E5 /* LaunchScreen.storyboard */,
 				324F1B9D204E518400E449E5 /* Info.plist */,
 				324F1BA3204E522400E449E5 /* MyBeacon.swift */,
+				324F1BA5204E551B00E449E5 /* BeaconCentralManager.swift */,
 			);
 			path = iBeaconCentral;
 			sourceTree = "<group>";
@@ -100,6 +103,11 @@
 					324F1B8D204E518400E449E5 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -140,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				324F1BA4204E522400E449E5 /* MyBeacon.swift in Sources */,
+				324F1BA6204E551B00E449E5 /* BeaconCentralManager.swift in Sources */,
 				324F1B94204E518400E449E5 /* ViewController.swift in Sources */,
 				324F1B92204E518400E449E5 /* AppDelegate.swift in Sources */,
 			);
