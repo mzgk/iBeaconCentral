@@ -24,6 +24,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
         }
 
         // Beaconのモニタリング開始
+        BeaconCentralManager.default.initLaunch()
         BeaconCentralManager.default.startMonitoring()
     }
 

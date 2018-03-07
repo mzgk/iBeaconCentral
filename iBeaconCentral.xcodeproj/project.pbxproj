@@ -58,14 +58,14 @@
 		324F1B90204E518400E449E5 /* iBeaconCentral */ = {
 			isa = PBXGroup;
 			children = (
+				324F1B9D204E518400E449E5 /* Info.plist */,
 				324F1B91204E518400E449E5 /* AppDelegate.swift */,
+				324F1BA5204E551B00E449E5 /* BeaconCentralManager.swift */,
+				324F1BA3204E522400E449E5 /* MyBeacon.swift */,
 				324F1B93204E518400E449E5 /* ViewController.swift */,
-				324F1B95204E518400E449E5 /* Main.storyboard */,
 				324F1B98204E518400E449E5 /* Assets.xcassets */,
 				324F1B9A204E518400E449E5 /* LaunchScreen.storyboard */,
-				324F1B9D204E518400E449E5 /* Info.plist */,
-				324F1BA3204E522400E449E5 /* MyBeacon.swift */,
-				324F1BA5204E551B00E449E5 /* BeaconCentralManager.swift */,
+				324F1B95204E518400E449E5 /* Main.storyboard */,
 			);
 			path = iBeaconCentral;
 			sourceTree = "<group>";
